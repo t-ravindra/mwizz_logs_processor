@@ -1,0 +1,20 @@
+input {
+   file {
+      path => "{{csv_path}}"
+      start_position => "beginning"
+      sincedb_path => "NUL"
+   }
+}
+filter {
+   csv {
+      separator => ","
+      columns => {{csv_fields}}
+   }
+}
+output {
+   elasticsearch {
+      hosts => ["localhost:9200"]
+      => "{{table_name}}"
+   }
+   stdout {codec => json_lines }
+}

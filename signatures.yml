@@ -1,0 +1,13 @@
+---
+  - product: Config Manager
+    issue: Bug-1234
+    name: Critical Errors
+    signature: ^.*WARNING.*$
+    workaround: Unknown
+    severity: Critical
+  - product: Intune
+    issue: Bug-4567
+    name: Just Warnings
+    signature: ^.*WARNING.*$
+    workaround: Not Applicable
+    severity: Warning
