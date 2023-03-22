@@ -44,7 +44,7 @@ class Analyzer:
                 self.load_to_elasticsearch(results_csv)
             except Exception as exc:
                 traceback.print_exc(exc)
-    
+
      def save_to_csv(self, results_csv):
          with open(results_csv, 'w') as csvfile:
             csvwriter = csv.writer(csvfile)
@@ -57,7 +57,7 @@ class Analyzer:
         #  content = template.render(csv_path=csv_path, csv_fields=MWIZZ_RESULTS_CSV_HEADERS, table_name="mwizz")
         #  with open("mwizz_logstash"+datetime.now().strftime('%Y%m-%d%H-%M%S-') + str(uuid4()) + ".cnf", mode="w", encoding="utf-8") as message:
         #     message.write(content)
-        es = Elasticsearch( {'host': '10.171.247.124', 'port': 9200, 'use_ssl': False},)
+        es = Elasticsearch( {'host': 'localhost', 'port': 9200, 'use_ssl': False},)
         with open(csv_path) as f:
             reader = csv.DictReader(f)
             helpers.bulk(es, reader, index='mwizz')
@@ -88,8 +88,8 @@ class Analyzer:
             else:
                 log.info("Not a log file ignoring.")
                 return []
-            
-                
+
+
      def analyze_log(self, file, sign):
         log.info("Analysis of file %s started." %(file))
         rows = []
@@ -109,14 +109,14 @@ class Analyzer:
             log.error("Failed to analyze the log file.", e)
             traceback.print_exc()
         log.info("Analyzing log file: Completed")
-        
+
 def main():
     parser = argparse.ArgumentParser(description="Log process cli.")
     parser.add_argument("-l", "--log-path", type=str, help="path to extracted debuglogs.")
     parser.add_argument("-s", "--signature", type=str, help="path to yaml containing regex signature to look for.")
     args = parser.parse_args()
     analyzer = Analyzer(args.log_path, args.signature)
-    
+
     analyzer.analyze()
 
 if __name__ == "__main__":
