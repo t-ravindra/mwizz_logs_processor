@@ -85,7 +85,9 @@ class Analyzer:
                 all_results = []
                 for f in os.listdir(log_path):
                     log.info("Recursing through %s", f)
-                    all_results.extend(self.recurse_logs(f, sign))
+                    results = self.recurse_logs(os.path.join(log_path,f), sign)
+                    if results:
+                        all_results.extend(results)
                 return all_results
             else:
                 log.info("Not a log file ignoring.")
@@ -96,19 +98,23 @@ class Analyzer:
         log.info("Analysis of file %s started." %(file))
         rows = []
         try:
-            log.info("showing this log for testing purpose ERROR sdflkj sdflkj")
-            regex = r"" + re.escape(sign["signature"]) + ""
+            regex = r"" + sign["signature"] + ""
             pattern = re.compile(regex)
             with open(file, 'r') as f:
-                matches = pattern.finditer(f.read())
-                i = 0
-                for match in matches:
-                    row = [sign["product"], sign["name"], sign["workaround"], match.group(), sign["signature"], file, sign["severity"]]
-                    rows.append(row)
-                    i = i+1
+                try:
+                    matches = pattern.finditer(f.read())
+                    log.info("Trying to match Regex: %s to file: %s" %(regex, file))
+                    i = 0
+                    for match in matches:
+                        log.info("Regex: %s matched file: %s" %(regex, file))
+                        row = [sign["product"], sign["name"], sign["workaround"], match.group(), sign["signature"], file, sign["severity"]]
+                        rows.append(row)
+                        i = i+1
+                except Exception as e:
+                    log.error("failed ot process file: %s", file)
+                    traceback.print_exc(e)
             return rows
         except Exception as e:
-            log.error("Failed to analyze the log file.", e)
             traceback.print_exc()
         log.info("Analyzing log file: Completed")
 

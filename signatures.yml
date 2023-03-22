@@ -1,13 +1,13 @@
 ---
-  - product: Config Manager
+  - product: ElasticSearch
     issue: Bug-1234
-    name: Critical Errors
-    signature: ^.*WARNING.*$
-    workaround: Unknown
+    name: HeapDumpOnOutOfMemoryError
+    signature: HeapDumpOnOutOfMemoryError
+    workaround: Not Applicable
     severity: Critical
-  - product: Intune
-    issue: Bug-4567
-    name: Just Warnings
-    signature: ^.*WARNING.*$
+  - product: ElasticSearch
+    issue: Health-4567
+    name: Good Health
+    signature: current\.health\=\"GREEN\"
     workaround: Not Applicable
     severity: Warning
