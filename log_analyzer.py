@@ -1,7 +1,6 @@
-"""
-Log Analyzer Module
-python.exe .\log_analyzer.py --log-path C:\Users\rtholiya\Desktop\mWizz_Logs_Processor\ -s C:\Users\rtholiya\Desktop\mWizz_Logs_Processor\signatures.yml
-"""
+# Log Analyzer Module
+# python.exe .\log_analyzer.py --log-path C:\Users\rtholiya\Desktop\mWizz_Logs_Processor\ -s C:\Users\rtholiya\Desktop\mWizz_Logs_Processor\signatures.yml
+
 import logging
 import os
 import traceback
@@ -57,10 +56,13 @@ class Analyzer:
         #  content = template.render(csv_path=csv_path, csv_fields=MWIZZ_RESULTS_CSV_HEADERS, table_name="mwizz")
         #  with open("mwizz_logstash"+datetime.now().strftime('%Y%m-%d%H-%M%S-') + str(uuid4()) + ".cnf", mode="w", encoding="utf-8") as message:
         #     message.write(content)
+        log.info("Saving to elasticsearch.")
         es = Elasticsearch( {'host': 'localhost', 'port': 9200, 'use_ssl': False},)
         with open(csv_path) as f:
             reader = csv.DictReader(f)
             helpers.bulk(es, reader, index='mwizz')
+        log.info("Saved to elasticsearch.")
+
 
      def recurse_logs(self, log_path, sign):
          log.info("Recursing path: %s" %(log_path))

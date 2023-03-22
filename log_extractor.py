@@ -1,6 +1,6 @@
-"""
-Zip file extractor
-"""
+# """
+# Zip file extractor
+# """
 from zipfile import ZipFile, is_zipfile
 import logging
 import os
@@ -23,8 +23,8 @@ class Zip:
 
      def recurse_zip(self, zip_file):
          """
-         TODO: a zip file can have zips inside hece we should recurse and extract all files before 
-         processing them. 
+         TODO: a zip file can have zips inside hece we should recurse and extract all files before
+         processing them.
          """
          log.info("Processing zip file: %s" %(zip_file) )
          extracted_in_dir = None
@@ -38,11 +38,12 @@ class Zip:
                  self.recurse_zip(f)
          else:
              log.info("Not a zip file ignoring.")
-         
+
      def extract_zip(self, file):
         log.info("Extracting zip file %s started." %(file))
         extract_in = os.path.join(os.path.dirname(file), os.path.splitext(file)[0])
         log.info("Extracting in: %s" %(extract_in))
+        self.extracted_in = extract_in
         try:
             with ZipFile(file, 'r') as zObject:
                 if extract_in and not os.path.exists(extract_in):
@@ -54,7 +55,7 @@ class Zip:
             traceback.print_exc()
         log.info("Extracting zip file: Completed")
         return None
-        
+
 def main():
     parser = argparse.ArgumentParser(description="Log process cli.")
     parser.add_argument("-l", "--log-path", type=str, help="path to debuglogs zip file.")
