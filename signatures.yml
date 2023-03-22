@@ -1,6 +1,6 @@
 ---
   - product: ElasticSearch
-    issue: Bug-1234
+    issue: Elastic-1234
     name: HeapDumpOnOutOfMemoryError
     signature: HeapDumpOnOutOfMemoryError
     workaround: Not Applicable
@@ -10,4 +10,10 @@
     name: Good Health
     signature: current\.health\=\"GREEN\"
     workaround: Not Applicable
+    severity: Warning
+  - product: MongoDB
+    issue: Mongo-4567
+    name: Mongo Access Control Disabled
+    signature: Access control is not enabled for the database.
+    workaround: Enable Access control for the database.
     severity: Warning

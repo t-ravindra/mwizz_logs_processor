@@ -111,7 +111,7 @@ class Analyzer:
                         rows.append(row)
                         i = i+1
                 except Exception as e:
-                    log.error("failed ot process file: %s", file)
+                    log.error("failed to process file: %s", file)
                     traceback.print_exc(e)
             return rows
         except Exception as e:
