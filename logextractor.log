@@ -1,0 +1,537 @@
+2023-03-22 14:10:13,078 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-03-22 14:10:13,079 Added job "process_logs" to job store "default"
+2023-03-22 14:10:13,079 Scheduler started
+2023-03-22 14:10:13,079 Looking for jobs to run
+2023-03-22 14:10:13,079 Next wakeup is due at 2023-03-22 14:10:15.078745+00:00 (in 1.998900 seconds)
+2023-03-22 14:10:15,079 Looking for jobs to run
+2023-03-22 14:10:15,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:15 UTC)" (scheduled at 2023-03-22 14:10:15.078745+00:00)
+2023-03-22 14:10:15,080 Next wakeup is due at 2023-03-22 14:10:17.078745+00:00 (in 1.999207 seconds)
+2023-03-22 14:10:15,081 found file: debuglogs.zip
+2023-03-22 14:10:15,121 Processing zip file: /logs_extracted/debuglogs.zip
+2023-03-22 14:10:15,128 Extracting zip file /logs_extracted/debuglogs.zip started.
+2023-03-22 14:10:15,128 Extracting in: /logs_extracted/debuglogs
+2023-03-22 14:10:15,187 Processing zip file: /logs_extracted/debuglogs
+2023-03-22 14:10:15,189 Found dir, recursing to extract any zip files inside.
+2023-03-22 14:10:15,191 Processing zip file: opt
+2023-03-22 14:10:15,191 Not a zip file ignoring.
+2023-03-22 14:10:15,191 Processing zip file: var
+2023-03-22 14:10:15,192 Not a zip file ignoring.
+2023-03-22 14:10:15,192 loading signature file: /issue_signatures/signatures.yml
+2023-03-22 14:10:15,203 Signatures: - issue: Bug-1234
+  name: Critical Errors
+  product: Config Manager
+  severity: Critical
+  signature: ^.*WARNING.*$
+  workaround: Unknown
+- issue: Bug-4567
+  name: Just Warnings
+  product: Intune
+  severity: Warning
+  signature: ^.*WARNING.*$
+  workaround: Not Applicable
+
+2023-03-22 14:10:15,204 processing sign: {'product': 'Config Manager', 'issue': 'Bug-1234', 'name': 'Critical Errors', 'signature': '^.*WARNING.*$', 'workaround': 'Unknown', 'severity': 'Critical'}
+2023-03-22 14:10:15,204 Recursing path: /logs_extracted/debuglogs
+2023-03-22 14:10:15,204 No file name provide,
+2023-03-22 14:10:15,205 Found dir, recursing to analyze files inside /logs_extracted/debuglogs
+2023-03-22 14:10:15,205 Recursing through opt
+2023-03-22 14:10:15,205 Recursing path: opt
+2023-03-22 14:10:15,205 No file name provide,
+2023-03-22 14:10:15,205 Not a log file ignoring.
+2023-03-22 14:10:15,206 Recursing through var
+2023-03-22 14:10:15,206 Recursing path: var
+2023-03-22 14:10:15,206 No file name provide,
+2023-03-22 14:10:15,206 Not a log file ignoring.
+2023-03-22 14:10:15,206 processing sign: {'product': 'Intune', 'issue': 'Bug-4567', 'name': 'Just Warnings', 'signature': '^.*WARNING.*$', 'workaround': 'Not Applicable', 'severity': 'Warning'}
+2023-03-22 14:10:15,206 Recursing path: /logs_extracted/debuglogs
+2023-03-22 14:10:15,206 No file name provide,
+2023-03-22 14:10:15,206 Found dir, recursing to analyze files inside /logs_extracted/debuglogs
+2023-03-22 14:10:15,206 Recursing through opt
+2023-03-22 14:10:15,206 Recursing path: opt
+2023-03-22 14:10:15,206 No file name provide,
+2023-03-22 14:10:15,206 Not a log file ignoring.
+2023-03-22 14:10:15,206 Recursing through var
+2023-03-22 14:10:15,206 Recursing path: var
+2023-03-22 14:10:15,206 No file name provide,
+2023-03-22 14:10:15,206 Not a log file ignoring.
+2023-03-22 14:10:15,260 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:17 UTC)" executed successfully
+2023-03-22 14:10:17,081 Looking for jobs to run
+2023-03-22 14:10:17,082 Next wakeup is due at 2023-03-22 14:10:19.078745+00:00 (in 1.997035 seconds)
+2023-03-22 14:10:17,082 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:19 UTC)" (scheduled at 2023-03-22 14:10:17.078745+00:00)
+2023-03-22 14:10:17,088 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:19 UTC)" executed successfully
+2023-03-22 14:10:19,080 Looking for jobs to run
+2023-03-22 14:10:19,081 Next wakeup is due at 2023-03-22 14:10:21.078745+00:00 (in 1.997815 seconds)
+2023-03-22 14:10:19,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:21 UTC)" (scheduled at 2023-03-22 14:10:19.078745+00:00)
+2023-03-22 14:10:19,086 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:21 UTC)" executed successfully
+2023-03-22 14:10:21,080 Looking for jobs to run
+2023-03-22 14:10:21,081 Next wakeup is due at 2023-03-22 14:10:23.078745+00:00 (in 1.998134 seconds)
+2023-03-22 14:10:21,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:23 UTC)" (scheduled at 2023-03-22 14:10:21.078745+00:00)
+2023-03-22 14:10:21,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:23 UTC)" executed successfully
+2023-03-22 14:10:23,080 Looking for jobs to run
+2023-03-22 14:10:23,081 Next wakeup is due at 2023-03-22 14:10:25.078745+00:00 (in 1.997519 seconds)
+2023-03-22 14:10:23,082 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:25 UTC)" (scheduled at 2023-03-22 14:10:23.078745+00:00)
+2023-03-22 14:10:23,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:25 UTC)" executed successfully
+2023-03-22 14:10:25,080 Looking for jobs to run
+2023-03-22 14:10:25,081 Next wakeup is due at 2023-03-22 14:10:27.078745+00:00 (in 1.997690 seconds)
+2023-03-22 14:10:25,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:27 UTC)" (scheduled at 2023-03-22 14:10:25.078745+00:00)
+2023-03-22 14:10:25,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:27 UTC)" executed successfully
+2023-03-22 14:10:27,080 Looking for jobs to run
+2023-03-22 14:10:27,080 Next wakeup is due at 2023-03-22 14:10:29.078745+00:00 (in 1.998463 seconds)
+2023-03-22 14:10:27,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:29 UTC)" (scheduled at 2023-03-22 14:10:27.078745+00:00)
+2023-03-22 14:10:27,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:29 UTC)" executed successfully
+2023-03-22 14:10:29,079 Looking for jobs to run
+2023-03-22 14:10:29,080 Next wakeup is due at 2023-03-22 14:10:31.078745+00:00 (in 1.998743 seconds)
+2023-03-22 14:10:29,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:31 UTC)" (scheduled at 2023-03-22 14:10:29.078745+00:00)
+2023-03-22 14:10:29,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:31 UTC)" executed successfully
+2023-03-22 14:10:31,080 Looking for jobs to run
+2023-03-22 14:10:31,081 Next wakeup is due at 2023-03-22 14:10:33.078745+00:00 (in 1.998041 seconds)
+2023-03-22 14:10:31,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:33 UTC)" (scheduled at 2023-03-22 14:10:31.078745+00:00)
+2023-03-22 14:10:31,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:33 UTC)" executed successfully
+2023-03-22 14:10:33,080 Looking for jobs to run
+2023-03-22 14:10:33,080 Next wakeup is due at 2023-03-22 14:10:35.078745+00:00 (in 1.998290 seconds)
+2023-03-22 14:10:33,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:35 UTC)" (scheduled at 2023-03-22 14:10:33.078745+00:00)
+2023-03-22 14:10:33,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:35 UTC)" executed successfully
+2023-03-22 14:10:35,080 Looking for jobs to run
+2023-03-22 14:10:35,081 Next wakeup is due at 2023-03-22 14:10:37.078745+00:00 (in 1.997560 seconds)
+2023-03-22 14:10:35,082 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:37 UTC)" (scheduled at 2023-03-22 14:10:35.078745+00:00)
+2023-03-22 14:10:35,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:37 UTC)" executed successfully
+2023-03-22 14:10:37,080 Looking for jobs to run
+2023-03-22 14:10:37,080 Next wakeup is due at 2023-03-22 14:10:39.078745+00:00 (in 1.998152 seconds)
+2023-03-22 14:10:37,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:39 UTC)" (scheduled at 2023-03-22 14:10:37.078745+00:00)
+2023-03-22 14:10:37,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:39 UTC)" executed successfully
+2023-03-22 14:10:39,079 Looking for jobs to run
+2023-03-22 14:10:39,080 Next wakeup is due at 2023-03-22 14:10:41.078745+00:00 (in 1.998367 seconds)
+2023-03-22 14:10:39,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:41 UTC)" (scheduled at 2023-03-22 14:10:39.078745+00:00)
+2023-03-22 14:10:39,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:41 UTC)" executed successfully
+2023-03-22 14:10:41,079 Looking for jobs to run
+2023-03-22 14:10:41,080 Next wakeup is due at 2023-03-22 14:10:43.078745+00:00 (in 1.998433 seconds)
+2023-03-22 14:10:41,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:43 UTC)" (scheduled at 2023-03-22 14:10:41.078745+00:00)
+2023-03-22 14:10:41,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:43 UTC)" executed successfully
+2023-03-22 14:10:43,080 Looking for jobs to run
+2023-03-22 14:10:43,081 Next wakeup is due at 2023-03-22 14:10:45.078745+00:00 (in 1.998203 seconds)
+2023-03-22 14:10:43,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:45 UTC)" (scheduled at 2023-03-22 14:10:43.078745+00:00)
+2023-03-22 14:10:43,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:45 UTC)" executed successfully
+2023-03-22 14:10:45,080 Looking for jobs to run
+2023-03-22 14:10:45,080 Next wakeup is due at 2023-03-22 14:10:47.078745+00:00 (in 1.998477 seconds)
+2023-03-22 14:10:45,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:47 UTC)" (scheduled at 2023-03-22 14:10:45.078745+00:00)
+2023-03-22 14:10:45,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:47 UTC)" executed successfully
+2023-03-22 14:10:47,079 Looking for jobs to run
+2023-03-22 14:10:47,079 Next wakeup is due at 2023-03-22 14:10:49.078745+00:00 (in 1.999055 seconds)
+2023-03-22 14:10:47,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:49 UTC)" (scheduled at 2023-03-22 14:10:47.078745+00:00)
+2023-03-22 14:10:47,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:49 UTC)" executed successfully
+2023-03-22 14:10:49,079 Looking for jobs to run
+2023-03-22 14:10:49,080 Next wakeup is due at 2023-03-22 14:10:51.078745+00:00 (in 1.998883 seconds)
+2023-03-22 14:10:49,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:51 UTC)" (scheduled at 2023-03-22 14:10:49.078745+00:00)
+2023-03-22 14:10:49,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:51 UTC)" executed successfully
+2023-03-22 14:10:51,079 Looking for jobs to run
+2023-03-22 14:10:51,080 Next wakeup is due at 2023-03-22 14:10:53.078745+00:00 (in 1.998844 seconds)
+2023-03-22 14:10:51,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:53 UTC)" (scheduled at 2023-03-22 14:10:51.078745+00:00)
+2023-03-22 14:10:51,080 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:53 UTC)" executed successfully
+2023-03-22 14:10:53,080 Looking for jobs to run
+2023-03-22 14:10:53,080 Next wakeup is due at 2023-03-22 14:10:55.078745+00:00 (in 1.998212 seconds)
+2023-03-22 14:10:53,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:55 UTC)" (scheduled at 2023-03-22 14:10:53.078745+00:00)
+2023-03-22 14:10:53,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:55 UTC)" executed successfully
+2023-03-22 14:10:55,080 Looking for jobs to run
+2023-03-22 14:10:55,080 Next wakeup is due at 2023-03-22 14:10:57.078745+00:00 (in 1.998189 seconds)
+2023-03-22 14:10:55,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:57 UTC)" (scheduled at 2023-03-22 14:10:55.078745+00:00)
+2023-03-22 14:10:55,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:57 UTC)" executed successfully
+2023-03-22 14:10:57,080 Looking for jobs to run
+2023-03-22 14:10:57,080 Next wakeup is due at 2023-03-22 14:10:59.078745+00:00 (in 1.998500 seconds)
+2023-03-22 14:10:57,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:59 UTC)" (scheduled at 2023-03-22 14:10:57.078745+00:00)
+2023-03-22 14:10:57,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:10:59 UTC)" executed successfully
+2023-03-22 14:10:59,079 Looking for jobs to run
+2023-03-22 14:10:59,080 Next wakeup is due at 2023-03-22 14:11:01.078745+00:00 (in 1.998697 seconds)
+2023-03-22 14:10:59,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:01 UTC)" (scheduled at 2023-03-22 14:10:59.078745+00:00)
+2023-03-22 14:10:59,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:01 UTC)" executed successfully
+2023-03-22 14:11:01,079 Looking for jobs to run
+2023-03-22 14:11:01,080 Next wakeup is due at 2023-03-22 14:11:03.078745+00:00 (in 1.998900 seconds)
+2023-03-22 14:11:01,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:03 UTC)" (scheduled at 2023-03-22 14:11:01.078745+00:00)
+2023-03-22 14:11:01,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:03 UTC)" executed successfully
+2023-03-22 14:11:03,080 Looking for jobs to run
+2023-03-22 14:11:03,081 Next wakeup is due at 2023-03-22 14:11:05.078745+00:00 (in 1.998152 seconds)
+2023-03-22 14:11:03,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:05 UTC)" (scheduled at 2023-03-22 14:11:03.078745+00:00)
+2023-03-22 14:11:03,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:05 UTC)" executed successfully
+2023-03-22 14:11:05,080 Looking for jobs to run
+2023-03-22 14:11:05,081 Next wakeup is due at 2023-03-22 14:11:07.078745+00:00 (in 1.997954 seconds)
+2023-03-22 14:11:05,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:07 UTC)" (scheduled at 2023-03-22 14:11:05.078745+00:00)
+2023-03-22 14:11:05,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:07 UTC)" executed successfully
+2023-03-22 14:11:07,080 Looking for jobs to run
+2023-03-22 14:11:07,080 Next wakeup is due at 2023-03-22 14:11:09.078745+00:00 (in 1.998214 seconds)
+2023-03-22 14:11:07,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:09 UTC)" (scheduled at 2023-03-22 14:11:07.078745+00:00)
+2023-03-22 14:11:07,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:09 UTC)" executed successfully
+2023-03-22 14:11:09,079 Looking for jobs to run
+2023-03-22 14:11:09,080 Next wakeup is due at 2023-03-22 14:11:11.078745+00:00 (in 1.998639 seconds)
+2023-03-22 14:11:09,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:11 UTC)" (scheduled at 2023-03-22 14:11:09.078745+00:00)
+2023-03-22 14:11:09,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:11 UTC)" executed successfully
+2023-03-22 14:11:11,079 Looking for jobs to run
+2023-03-22 14:11:11,080 Next wakeup is due at 2023-03-22 14:11:13.078745+00:00 (in 1.998444 seconds)
+2023-03-22 14:11:11,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:13 UTC)" (scheduled at 2023-03-22 14:11:11.078745+00:00)
+2023-03-22 14:11:11,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:13 UTC)" executed successfully
+2023-03-22 14:11:13,080 Looking for jobs to run
+2023-03-22 14:11:13,081 Next wakeup is due at 2023-03-22 14:11:15.078745+00:00 (in 1.997595 seconds)
+2023-03-22 14:11:13,082 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:15 UTC)" (scheduled at 2023-03-22 14:11:13.078745+00:00)
+2023-03-22 14:11:13,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:15 UTC)" executed successfully
+2023-03-22 14:11:15,080 Looking for jobs to run
+2023-03-22 14:11:15,081 Next wakeup is due at 2023-03-22 14:11:17.078745+00:00 (in 1.997946 seconds)
+2023-03-22 14:11:15,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:17 UTC)" (scheduled at 2023-03-22 14:11:15.078745+00:00)
+2023-03-22 14:11:15,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:17 UTC)" executed successfully
+2023-03-22 14:11:17,080 Looking for jobs to run
+2023-03-22 14:11:17,080 Next wakeup is due at 2023-03-22 14:11:19.078745+00:00 (in 1.998343 seconds)
+2023-03-22 14:11:17,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:19 UTC)" (scheduled at 2023-03-22 14:11:17.078745+00:00)
+2023-03-22 14:11:17,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:19 UTC)" executed successfully
+2023-03-22 14:11:19,079 Looking for jobs to run
+2023-03-22 14:11:19,080 Next wakeup is due at 2023-03-22 14:11:21.078745+00:00 (in 1.998870 seconds)
+2023-03-22 14:11:19,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:21 UTC)" (scheduled at 2023-03-22 14:11:19.078745+00:00)
+2023-03-22 14:11:19,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:21 UTC)" executed successfully
+2023-03-22 14:11:21,079 Looking for jobs to run
+2023-03-22 14:11:21,080 Next wakeup is due at 2023-03-22 14:11:23.078745+00:00 (in 1.998602 seconds)
+2023-03-22 14:11:21,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:23 UTC)" (scheduled at 2023-03-22 14:11:21.078745+00:00)
+2023-03-22 14:11:21,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:23 UTC)" executed successfully
+2023-03-22 14:11:23,079 Looking for jobs to run
+2023-03-22 14:11:23,080 Next wakeup is due at 2023-03-22 14:11:25.078745+00:00 (in 1.998810 seconds)
+2023-03-22 14:11:23,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:25 UTC)" (scheduled at 2023-03-22 14:11:23.078745+00:00)
+2023-03-22 14:11:23,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:25 UTC)" executed successfully
+2023-03-22 14:11:25,080 Looking for jobs to run
+2023-03-22 14:11:25,081 Next wakeup is due at 2023-03-22 14:11:27.078745+00:00 (in 1.998057 seconds)
+2023-03-22 14:11:25,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:27 UTC)" (scheduled at 2023-03-22 14:11:25.078745+00:00)
+2023-03-22 14:11:25,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:27 UTC)" executed successfully
+2023-03-22 14:11:27,080 Looking for jobs to run
+2023-03-22 14:11:27,080 Next wakeup is due at 2023-03-22 14:11:29.078745+00:00 (in 1.998433 seconds)
+2023-03-22 14:11:27,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:29 UTC)" (scheduled at 2023-03-22 14:11:27.078745+00:00)
+2023-03-22 14:11:27,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:29 UTC)" executed successfully
+2023-03-22 14:11:29,079 Looking for jobs to run
+2023-03-22 14:11:29,080 Next wakeup is due at 2023-03-22 14:11:31.078745+00:00 (in 1.998515 seconds)
+2023-03-22 14:11:29,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:31 UTC)" (scheduled at 2023-03-22 14:11:29.078745+00:00)
+2023-03-22 14:11:29,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:31 UTC)" executed successfully
+2023-03-22 14:11:31,080 Looking for jobs to run
+2023-03-22 14:11:31,081 Next wakeup is due at 2023-03-22 14:11:33.078745+00:00 (in 1.997464 seconds)
+2023-03-22 14:11:31,082 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:33 UTC)" (scheduled at 2023-03-22 14:11:31.078745+00:00)
+2023-03-22 14:11:31,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:33 UTC)" executed successfully
+2023-03-22 14:11:33,080 Looking for jobs to run
+2023-03-22 14:11:33,081 Next wakeup is due at 2023-03-22 14:11:35.078745+00:00 (in 1.998027 seconds)
+2023-03-22 14:11:33,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:35 UTC)" (scheduled at 2023-03-22 14:11:33.078745+00:00)
+2023-03-22 14:11:33,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:35 UTC)" executed successfully
+2023-03-22 14:11:35,080 Looking for jobs to run
+2023-03-22 14:11:35,080 Next wakeup is due at 2023-03-22 14:11:37.078745+00:00 (in 1.998170 seconds)
+2023-03-22 14:11:35,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:37 UTC)" (scheduled at 2023-03-22 14:11:35.078745+00:00)
+2023-03-22 14:11:35,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:37 UTC)" executed successfully
+2023-03-22 14:11:37,079 Looking for jobs to run
+2023-03-22 14:11:37,080 Next wakeup is due at 2023-03-22 14:11:39.078745+00:00 (in 1.998635 seconds)
+2023-03-22 14:11:37,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:39 UTC)" (scheduled at 2023-03-22 14:11:37.078745+00:00)
+2023-03-22 14:11:37,080 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:39 UTC)" executed successfully
+2023-03-22 14:11:39,079 Looking for jobs to run
+2023-03-22 14:11:39,080 Next wakeup is due at 2023-03-22 14:11:41.078745+00:00 (in 1.998955 seconds)
+2023-03-22 14:11:39,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:41 UTC)" (scheduled at 2023-03-22 14:11:39.078745+00:00)
+2023-03-22 14:11:39,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:41 UTC)" executed successfully
+2023-03-22 14:11:41,080 Looking for jobs to run
+2023-03-22 14:11:41,081 Next wakeup is due at 2023-03-22 14:11:43.078745+00:00 (in 1.998083 seconds)
+2023-03-22 14:11:41,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:43 UTC)" (scheduled at 2023-03-22 14:11:41.078745+00:00)
+2023-03-22 14:11:41,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:43 UTC)" executed successfully
+2023-03-22 14:11:43,080 Looking for jobs to run
+2023-03-22 14:11:43,081 Next wakeup is due at 2023-03-22 14:11:45.078745+00:00 (in 1.998053 seconds)
+2023-03-22 14:11:43,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:45 UTC)" (scheduled at 2023-03-22 14:11:43.078745+00:00)
+2023-03-22 14:11:43,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:45 UTC)" executed successfully
+2023-03-22 14:11:45,080 Looking for jobs to run
+2023-03-22 14:11:45,081 Next wakeup is due at 2023-03-22 14:11:47.078745+00:00 (in 1.997913 seconds)
+2023-03-22 14:11:45,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:47 UTC)" (scheduled at 2023-03-22 14:11:45.078745+00:00)
+2023-03-22 14:11:45,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:47 UTC)" executed successfully
+2023-03-22 14:11:47,080 Looking for jobs to run
+2023-03-22 14:11:47,081 Next wakeup is due at 2023-03-22 14:11:49.078745+00:00 (in 1.997837 seconds)
+2023-03-22 14:11:47,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:49 UTC)" (scheduled at 2023-03-22 14:11:47.078745+00:00)
+2023-03-22 14:11:47,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:49 UTC)" executed successfully
+2023-03-22 14:11:49,080 Looking for jobs to run
+2023-03-22 14:11:49,081 Next wakeup is due at 2023-03-22 14:11:51.078745+00:00 (in 1.997653 seconds)
+2023-03-22 14:11:49,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:51 UTC)" (scheduled at 2023-03-22 14:11:49.078745+00:00)
+2023-03-22 14:11:49,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:51 UTC)" executed successfully
+2023-03-22 14:11:51,080 Looking for jobs to run
+2023-03-22 14:11:51,080 Next wakeup is due at 2023-03-22 14:11:53.078745+00:00 (in 1.998466 seconds)
+2023-03-22 14:11:51,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:53 UTC)" (scheduled at 2023-03-22 14:11:51.078745+00:00)
+2023-03-22 14:11:51,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:53 UTC)" executed successfully
+2023-03-22 14:11:53,079 Looking for jobs to run
+2023-03-22 14:11:53,079 Next wakeup is due at 2023-03-22 14:11:55.078745+00:00 (in 1.998998 seconds)
+2023-03-22 14:11:53,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:55 UTC)" (scheduled at 2023-03-22 14:11:53.078745+00:00)
+2023-03-22 14:11:53,080 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:55 UTC)" executed successfully
+2023-03-22 14:11:55,079 Looking for jobs to run
+2023-03-22 14:11:55,080 Next wakeup is due at 2023-03-22 14:11:57.078745+00:00 (in 1.998781 seconds)
+2023-03-22 14:11:55,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:57 UTC)" (scheduled at 2023-03-22 14:11:55.078745+00:00)
+2023-03-22 14:11:55,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:57 UTC)" executed successfully
+2023-03-22 14:11:57,080 Looking for jobs to run
+2023-03-22 14:11:57,080 Next wakeup is due at 2023-03-22 14:11:59.078745+00:00 (in 1.998226 seconds)
+2023-03-22 14:11:57,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:59 UTC)" (scheduled at 2023-03-22 14:11:57.078745+00:00)
+2023-03-22 14:11:57,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:11:59 UTC)" executed successfully
+2023-03-22 14:11:59,080 Looking for jobs to run
+2023-03-22 14:11:59,080 Next wakeup is due at 2023-03-22 14:12:01.078745+00:00 (in 1.998292 seconds)
+2023-03-22 14:11:59,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:01 UTC)" (scheduled at 2023-03-22 14:11:59.078745+00:00)
+2023-03-22 14:11:59,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:01 UTC)" executed successfully
+2023-03-22 14:12:01,080 Looking for jobs to run
+2023-03-22 14:12:01,081 Next wakeup is due at 2023-03-22 14:12:03.078745+00:00 (in 1.997646 seconds)
+2023-03-22 14:12:01,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:03 UTC)" (scheduled at 2023-03-22 14:12:01.078745+00:00)
+2023-03-22 14:12:01,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:03 UTC)" executed successfully
+2023-03-22 14:12:03,080 Looking for jobs to run
+2023-03-22 14:12:03,080 Next wakeup is due at 2023-03-22 14:12:05.078745+00:00 (in 1.998255 seconds)
+2023-03-22 14:12:03,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:05 UTC)" (scheduled at 2023-03-22 14:12:03.078745+00:00)
+2023-03-22 14:12:03,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:05 UTC)" executed successfully
+2023-03-22 14:12:05,080 Looking for jobs to run
+2023-03-22 14:12:05,081 Next wakeup is due at 2023-03-22 14:12:07.078745+00:00 (in 1.997968 seconds)
+2023-03-22 14:12:05,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:07 UTC)" (scheduled at 2023-03-22 14:12:05.078745+00:00)
+2023-03-22 14:12:05,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:07 UTC)" executed successfully
+2023-03-22 14:12:07,080 Looking for jobs to run
+2023-03-22 14:12:07,081 Next wakeup is due at 2023-03-22 14:12:09.078745+00:00 (in 1.998047 seconds)
+2023-03-22 14:12:07,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:09 UTC)" (scheduled at 2023-03-22 14:12:07.078745+00:00)
+2023-03-22 14:12:07,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:09 UTC)" executed successfully
+2023-03-22 14:12:09,080 Looking for jobs to run
+2023-03-22 14:12:09,080 Next wakeup is due at 2023-03-22 14:12:11.078745+00:00 (in 1.998327 seconds)
+2023-03-22 14:12:09,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:11 UTC)" (scheduled at 2023-03-22 14:12:09.078745+00:00)
+2023-03-22 14:12:09,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:11 UTC)" executed successfully
+2023-03-22 14:12:11,079 Looking for jobs to run
+2023-03-22 14:12:11,080 Next wakeup is due at 2023-03-22 14:12:13.078745+00:00 (in 1.998427 seconds)
+2023-03-22 14:12:11,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:13 UTC)" (scheduled at 2023-03-22 14:12:11.078745+00:00)
+2023-03-22 14:12:11,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:13 UTC)" executed successfully
+2023-03-22 14:12:13,080 Looking for jobs to run
+2023-03-22 14:12:13,081 Next wakeup is due at 2023-03-22 14:12:15.078745+00:00 (in 1.997852 seconds)
+2023-03-22 14:12:13,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:15 UTC)" (scheduled at 2023-03-22 14:12:13.078745+00:00)
+2023-03-22 14:12:13,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:15 UTC)" executed successfully
+2023-03-22 14:12:15,080 Looking for jobs to run
+2023-03-22 14:12:15,081 Next wakeup is due at 2023-03-22 14:12:17.078745+00:00 (in 1.997620 seconds)
+2023-03-22 14:12:15,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:17 UTC)" (scheduled at 2023-03-22 14:12:15.078745+00:00)
+2023-03-22 14:12:15,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:17 UTC)" executed successfully
+2023-03-22 14:12:17,080 Looking for jobs to run
+2023-03-22 14:12:17,081 Next wakeup is due at 2023-03-22 14:12:19.078745+00:00 (in 1.998101 seconds)
+2023-03-22 14:12:17,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:19 UTC)" (scheduled at 2023-03-22 14:12:17.078745+00:00)
+2023-03-22 14:12:17,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:19 UTC)" executed successfully
+2023-03-22 14:12:19,080 Looking for jobs to run
+2023-03-22 14:12:19,081 Next wakeup is due at 2023-03-22 14:12:21.078745+00:00 (in 1.997719 seconds)
+2023-03-22 14:12:19,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:21 UTC)" (scheduled at 2023-03-22 14:12:19.078745+00:00)
+2023-03-22 14:12:19,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:21 UTC)" executed successfully
+2023-03-22 14:12:21,080 Looking for jobs to run
+2023-03-22 14:12:21,081 Next wakeup is due at 2023-03-22 14:12:23.078745+00:00 (in 1.997915 seconds)
+2023-03-22 14:12:21,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:23 UTC)" (scheduled at 2023-03-22 14:12:21.078745+00:00)
+2023-03-22 14:12:21,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:23 UTC)" executed successfully
+2023-03-22 14:12:23,080 Looking for jobs to run
+2023-03-22 14:12:23,080 Next wakeup is due at 2023-03-22 14:12:25.078745+00:00 (in 1.998128 seconds)
+2023-03-22 14:12:23,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:25 UTC)" (scheduled at 2023-03-22 14:12:23.078745+00:00)
+2023-03-22 14:12:23,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:25 UTC)" executed successfully
+2023-03-22 14:12:25,079 Looking for jobs to run
+2023-03-22 14:12:25,080 Next wakeup is due at 2023-03-22 14:12:27.078745+00:00 (in 1.998637 seconds)
+2023-03-22 14:12:25,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:27 UTC)" (scheduled at 2023-03-22 14:12:25.078745+00:00)
+2023-03-22 14:12:25,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:27 UTC)" executed successfully
+2023-03-22 14:12:27,079 Looking for jobs to run
+2023-03-22 14:12:27,080 Next wakeup is due at 2023-03-22 14:12:29.078745+00:00 (in 1.998751 seconds)
+2023-03-22 14:12:27,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:29 UTC)" (scheduled at 2023-03-22 14:12:27.078745+00:00)
+2023-03-22 14:12:27,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:29 UTC)" executed successfully
+2023-03-22 14:12:29,079 Looking for jobs to run
+2023-03-22 14:12:29,080 Next wakeup is due at 2023-03-22 14:12:31.078745+00:00 (in 1.998759 seconds)
+2023-03-22 14:12:29,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:31 UTC)" (scheduled at 2023-03-22 14:12:29.078745+00:00)
+2023-03-22 14:12:29,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:31 UTC)" executed successfully
+2023-03-22 14:12:31,080 Looking for jobs to run
+2023-03-22 14:12:31,081 Next wakeup is due at 2023-03-22 14:12:33.078745+00:00 (in 1.997539 seconds)
+2023-03-22 14:12:31,082 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:33 UTC)" (scheduled at 2023-03-22 14:12:31.078745+00:00)
+2023-03-22 14:12:31,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:33 UTC)" executed successfully
+2023-03-22 14:12:33,080 Looking for jobs to run
+2023-03-22 14:12:33,081 Next wakeup is due at 2023-03-22 14:12:35.078745+00:00 (in 1.998068 seconds)
+2023-03-22 14:12:33,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:35 UTC)" (scheduled at 2023-03-22 14:12:33.078745+00:00)
+2023-03-22 14:12:33,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:35 UTC)" executed successfully
+2023-03-22 14:12:35,080 Looking for jobs to run
+2023-03-22 14:12:35,081 Next wakeup is due at 2023-03-22 14:12:37.078745+00:00 (in 1.997747 seconds)
+2023-03-22 14:12:35,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:37 UTC)" (scheduled at 2023-03-22 14:12:35.078745+00:00)
+2023-03-22 14:12:35,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:37 UTC)" executed successfully
+2023-03-22 14:12:37,079 Looking for jobs to run
+2023-03-22 14:12:37,080 Next wakeup is due at 2023-03-22 14:12:39.078745+00:00 (in 1.998343 seconds)
+2023-03-22 14:12:37,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:39 UTC)" (scheduled at 2023-03-22 14:12:37.078745+00:00)
+2023-03-22 14:12:37,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:39 UTC)" executed successfully
+2023-03-22 14:12:39,080 Looking for jobs to run
+2023-03-22 14:12:39,081 Next wakeup is due at 2023-03-22 14:12:41.078745+00:00 (in 1.997959 seconds)
+2023-03-22 14:12:39,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:41 UTC)" (scheduled at 2023-03-22 14:12:39.078745+00:00)
+2023-03-22 14:12:39,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:41 UTC)" executed successfully
+2023-03-22 14:12:41,080 Looking for jobs to run
+2023-03-22 14:12:41,081 Next wakeup is due at 2023-03-22 14:12:43.078745+00:00 (in 1.998066 seconds)
+2023-03-22 14:12:41,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:43 UTC)" (scheduled at 2023-03-22 14:12:41.078745+00:00)
+2023-03-22 14:12:41,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:43 UTC)" executed successfully
+2023-03-22 14:12:43,080 Looking for jobs to run
+2023-03-22 14:12:43,081 Next wakeup is due at 2023-03-22 14:12:45.078745+00:00 (in 1.997915 seconds)
+2023-03-22 14:12:43,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:45 UTC)" (scheduled at 2023-03-22 14:12:43.078745+00:00)
+2023-03-22 14:12:43,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:45 UTC)" executed successfully
+2023-03-22 14:12:45,079 Looking for jobs to run
+2023-03-22 14:12:45,079 Next wakeup is due at 2023-03-22 14:12:47.078745+00:00 (in 1.999344 seconds)
+2023-03-22 14:12:45,079 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:47 UTC)" (scheduled at 2023-03-22 14:12:45.078745+00:00)
+2023-03-22 14:12:45,080 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:47 UTC)" executed successfully
+2023-03-22 14:12:47,079 Looking for jobs to run
+2023-03-22 14:12:47,080 Next wakeup is due at 2023-03-22 14:12:49.078745+00:00 (in 1.998884 seconds)
+2023-03-22 14:12:47,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:49 UTC)" (scheduled at 2023-03-22 14:12:47.078745+00:00)
+2023-03-22 14:12:47,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:49 UTC)" executed successfully
+2023-03-22 14:12:49,080 Looking for jobs to run
+2023-03-22 14:12:49,081 Next wakeup is due at 2023-03-22 14:12:51.078745+00:00 (in 1.998000 seconds)
+2023-03-22 14:12:49,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:51 UTC)" (scheduled at 2023-03-22 14:12:49.078745+00:00)
+2023-03-22 14:12:49,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:51 UTC)" executed successfully
+2023-03-22 14:12:51,080 Looking for jobs to run
+2023-03-22 14:12:51,080 Next wakeup is due at 2023-03-22 14:12:53.078745+00:00 (in 1.998356 seconds)
+2023-03-22 14:12:51,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:53 UTC)" (scheduled at 2023-03-22 14:12:51.078745+00:00)
+2023-03-22 14:12:51,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:53 UTC)" executed successfully
+2023-03-22 14:12:53,079 Looking for jobs to run
+2023-03-22 14:12:53,080 Next wakeup is due at 2023-03-22 14:12:55.078745+00:00 (in 1.998597 seconds)
+2023-03-22 14:12:53,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:55 UTC)" (scheduled at 2023-03-22 14:12:53.078745+00:00)
+2023-03-22 14:12:53,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:55 UTC)" executed successfully
+2023-03-22 14:12:55,079 Looking for jobs to run
+2023-03-22 14:12:55,080 Next wakeup is due at 2023-03-22 14:12:57.078745+00:00 (in 1.998284 seconds)
+2023-03-22 14:12:55,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:57 UTC)" (scheduled at 2023-03-22 14:12:55.078745+00:00)
+2023-03-22 14:12:55,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:57 UTC)" executed successfully
+2023-03-22 14:12:57,080 Looking for jobs to run
+2023-03-22 14:12:57,080 Next wakeup is due at 2023-03-22 14:12:59.078745+00:00 (in 1.998364 seconds)
+2023-03-22 14:12:57,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:59 UTC)" (scheduled at 2023-03-22 14:12:57.078745+00:00)
+2023-03-22 14:12:57,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:12:59 UTC)" executed successfully
+2023-03-22 14:12:59,080 Looking for jobs to run
+2023-03-22 14:12:59,080 Next wakeup is due at 2023-03-22 14:13:01.078745+00:00 (in 1.998190 seconds)
+2023-03-22 14:12:59,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:01 UTC)" (scheduled at 2023-03-22 14:12:59.078745+00:00)
+2023-03-22 14:12:59,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:01 UTC)" executed successfully
+2023-03-22 14:13:01,080 Looking for jobs to run
+2023-03-22 14:13:01,081 Next wakeup is due at 2023-03-22 14:13:03.078745+00:00 (in 1.997996 seconds)
+2023-03-22 14:13:01,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:03 UTC)" (scheduled at 2023-03-22 14:13:01.078745+00:00)
+2023-03-22 14:13:01,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:03 UTC)" executed successfully
+2023-03-22 14:13:03,080 Looking for jobs to run
+2023-03-22 14:13:03,080 Next wakeup is due at 2023-03-22 14:13:05.078745+00:00 (in 1.998326 seconds)
+2023-03-22 14:13:03,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:05 UTC)" (scheduled at 2023-03-22 14:13:03.078745+00:00)
+2023-03-22 14:13:03,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:05 UTC)" executed successfully
+2023-03-22 14:13:05,079 Looking for jobs to run
+2023-03-22 14:13:05,080 Next wakeup is due at 2023-03-22 14:13:07.078745+00:00 (in 1.998668 seconds)
+2023-03-22 14:13:05,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:07 UTC)" (scheduled at 2023-03-22 14:13:05.078745+00:00)
+2023-03-22 14:13:05,080 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:07 UTC)" executed successfully
+2023-03-22 14:13:07,079 Looking for jobs to run
+2023-03-22 14:13:07,080 Next wakeup is due at 2023-03-22 14:13:09.078745+00:00 (in 1.998811 seconds)
+2023-03-22 14:13:07,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:09 UTC)" (scheduled at 2023-03-22 14:13:07.078745+00:00)
+2023-03-22 14:13:07,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:09 UTC)" executed successfully
+2023-03-22 14:13:09,080 Looking for jobs to run
+2023-03-22 14:13:09,080 Next wakeup is due at 2023-03-22 14:13:11.078745+00:00 (in 1.998462 seconds)
+2023-03-22 14:13:09,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:11 UTC)" (scheduled at 2023-03-22 14:13:09.078745+00:00)
+2023-03-22 14:13:09,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:11 UTC)" executed successfully
+2023-03-22 14:13:11,079 Looking for jobs to run
+2023-03-22 14:13:11,080 Next wakeup is due at 2023-03-22 14:13:13.078745+00:00 (in 1.998373 seconds)
+2023-03-22 14:13:11,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:13 UTC)" (scheduled at 2023-03-22 14:13:11.078745+00:00)
+2023-03-22 14:13:11,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:13 UTC)" executed successfully
+2023-03-22 14:13:13,080 Looking for jobs to run
+2023-03-22 14:13:13,081 Next wakeup is due at 2023-03-22 14:13:15.078745+00:00 (in 1.997784 seconds)
+2023-03-22 14:13:13,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:15 UTC)" (scheduled at 2023-03-22 14:13:13.078745+00:00)
+2023-03-22 14:13:13,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:15 UTC)" executed successfully
+2023-03-22 14:13:15,080 Looking for jobs to run
+2023-03-22 14:13:15,080 Next wakeup is due at 2023-03-22 14:13:17.078745+00:00 (in 1.998300 seconds)
+2023-03-22 14:13:15,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:17 UTC)" (scheduled at 2023-03-22 14:13:15.078745+00:00)
+2023-03-22 14:13:15,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:17 UTC)" executed successfully
+2023-03-22 14:13:17,080 Looking for jobs to run
+2023-03-22 14:13:17,081 Next wakeup is due at 2023-03-22 14:13:19.078745+00:00 (in 1.997725 seconds)
+2023-03-22 14:13:17,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:19 UTC)" (scheduled at 2023-03-22 14:13:17.078745+00:00)
+2023-03-22 14:13:17,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:19 UTC)" executed successfully
+2023-03-22 14:13:19,080 Looking for jobs to run
+2023-03-22 14:13:19,081 Next wakeup is due at 2023-03-22 14:13:21.078745+00:00 (in 1.998154 seconds)
+2023-03-22 14:13:19,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:21 UTC)" (scheduled at 2023-03-22 14:13:19.078745+00:00)
+2023-03-22 14:13:19,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:21 UTC)" executed successfully
+2023-03-22 14:13:21,080 Looking for jobs to run
+2023-03-22 14:13:21,080 Next wakeup is due at 2023-03-22 14:13:23.078745+00:00 (in 1.998250 seconds)
+2023-03-22 14:13:21,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:23 UTC)" (scheduled at 2023-03-22 14:13:21.078745+00:00)
+2023-03-22 14:13:21,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:23 UTC)" executed successfully
+2023-03-22 14:13:23,080 Looking for jobs to run
+2023-03-22 14:13:23,081 Next wakeup is due at 2023-03-22 14:13:25.078745+00:00 (in 1.997949 seconds)
+2023-03-22 14:13:23,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:25 UTC)" (scheduled at 2023-03-22 14:13:23.078745+00:00)
+2023-03-22 14:13:23,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:25 UTC)" executed successfully
+2023-03-22 14:13:25,080 Looking for jobs to run
+2023-03-22 14:13:25,081 Next wakeup is due at 2023-03-22 14:13:27.078745+00:00 (in 1.997492 seconds)
+2023-03-22 14:13:25,082 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:27 UTC)" (scheduled at 2023-03-22 14:13:25.078745+00:00)
+2023-03-22 14:13:25,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:27 UTC)" executed successfully
+2023-03-22 14:13:27,080 Looking for jobs to run
+2023-03-22 14:13:27,081 Next wakeup is due at 2023-03-22 14:13:29.078745+00:00 (in 1.998123 seconds)
+2023-03-22 14:13:27,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:29 UTC)" (scheduled at 2023-03-22 14:13:27.078745+00:00)
+2023-03-22 14:13:27,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:29 UTC)" executed successfully
+2023-03-22 14:13:29,080 Looking for jobs to run
+2023-03-22 14:13:29,080 Next wakeup is due at 2023-03-22 14:13:31.078745+00:00 (in 1.998279 seconds)
+2023-03-22 14:13:29,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:31 UTC)" (scheduled at 2023-03-22 14:13:29.078745+00:00)
+2023-03-22 14:13:29,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:31 UTC)" executed successfully
+2023-03-22 14:13:31,079 Looking for jobs to run
+2023-03-22 14:13:31,080 Next wakeup is due at 2023-03-22 14:13:33.078745+00:00 (in 1.998631 seconds)
+2023-03-22 14:13:31,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:33 UTC)" (scheduled at 2023-03-22 14:13:31.078745+00:00)
+2023-03-22 14:13:31,080 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:33 UTC)" executed successfully
+2023-03-22 14:13:33,079 Looking for jobs to run
+2023-03-22 14:13:33,079 Next wakeup is due at 2023-03-22 14:13:35.078745+00:00 (in 1.999181 seconds)
+2023-03-22 14:13:33,079 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:35 UTC)" (scheduled at 2023-03-22 14:13:33.078745+00:00)
+2023-03-22 14:13:33,080 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:35 UTC)" executed successfully
+2023-03-22 14:13:35,079 Looking for jobs to run
+2023-03-22 14:13:35,079 Next wakeup is due at 2023-03-22 14:13:37.078745+00:00 (in 1.999116 seconds)
+2023-03-22 14:13:35,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:37 UTC)" (scheduled at 2023-03-22 14:13:35.078745+00:00)
+2023-03-22 14:13:35,080 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:37 UTC)" executed successfully
+2023-03-22 14:13:37,080 Looking for jobs to run
+2023-03-22 14:13:37,080 Next wakeup is due at 2023-03-22 14:13:39.078745+00:00 (in 1.998322 seconds)
+2023-03-22 14:13:37,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:39 UTC)" (scheduled at 2023-03-22 14:13:37.078745+00:00)
+2023-03-22 14:13:37,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:39 UTC)" executed successfully
+2023-03-22 14:13:39,080 Looking for jobs to run
+2023-03-22 14:13:39,081 Next wakeup is due at 2023-03-22 14:13:41.078745+00:00 (in 1.998077 seconds)
+2023-03-22 14:13:39,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:41 UTC)" (scheduled at 2023-03-22 14:13:39.078745+00:00)
+2023-03-22 14:13:39,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:41 UTC)" executed successfully
+2023-03-22 14:13:41,081 Looking for jobs to run
+2023-03-22 14:13:41,082 Next wakeup is due at 2023-03-22 14:13:43.078745+00:00 (in 1.997099 seconds)
+2023-03-22 14:13:41,082 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:43 UTC)" (scheduled at 2023-03-22 14:13:41.078745+00:00)
+2023-03-22 14:13:41,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:43 UTC)" executed successfully
+2023-03-22 14:13:43,080 Looking for jobs to run
+2023-03-22 14:13:43,080 Next wakeup is due at 2023-03-22 14:13:45.078745+00:00 (in 1.998307 seconds)
+2023-03-22 14:13:43,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:45 UTC)" (scheduled at 2023-03-22 14:13:43.078745+00:00)
+2023-03-22 14:13:43,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:45 UTC)" executed successfully
+2023-03-22 14:13:45,080 Looking for jobs to run
+2023-03-22 14:13:45,080 Next wakeup is due at 2023-03-22 14:13:47.078745+00:00 (in 1.998364 seconds)
+2023-03-22 14:13:45,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:47 UTC)" (scheduled at 2023-03-22 14:13:45.078745+00:00)
+2023-03-22 14:13:45,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:47 UTC)" executed successfully
+2023-03-22 14:13:47,080 Looking for jobs to run
+2023-03-22 14:13:47,081 Next wakeup is due at 2023-03-22 14:13:49.078745+00:00 (in 1.997912 seconds)
+2023-03-22 14:13:47,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:49 UTC)" (scheduled at 2023-03-22 14:13:47.078745+00:00)
+2023-03-22 14:13:47,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:49 UTC)" executed successfully
+2023-03-22 14:13:49,080 Looking for jobs to run
+2023-03-22 14:13:49,081 Next wakeup is due at 2023-03-22 14:13:51.078745+00:00 (in 1.998177 seconds)
+2023-03-22 14:13:49,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:51 UTC)" (scheduled at 2023-03-22 14:13:49.078745+00:00)
+2023-03-22 14:13:49,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:51 UTC)" executed successfully
+2023-03-22 14:13:51,079 Looking for jobs to run
+2023-03-22 14:13:51,080 Next wakeup is due at 2023-03-22 14:13:53.078745+00:00 (in 1.998406 seconds)
+2023-03-22 14:13:51,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:53 UTC)" (scheduled at 2023-03-22 14:13:51.078745+00:00)
+2023-03-22 14:13:51,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:53 UTC)" executed successfully
+2023-03-22 14:13:53,080 Looking for jobs to run
+2023-03-22 14:13:53,080 Next wakeup is due at 2023-03-22 14:13:55.078745+00:00 (in 1.998337 seconds)
+2023-03-22 14:13:53,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:55 UTC)" (scheduled at 2023-03-22 14:13:53.078745+00:00)
+2023-03-22 14:13:53,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:55 UTC)" executed successfully
+2023-03-22 14:13:55,080 Looking for jobs to run
+2023-03-22 14:13:55,081 Next wakeup is due at 2023-03-22 14:13:57.078745+00:00 (in 1.997671 seconds)
+2023-03-22 14:13:55,082 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:57 UTC)" (scheduled at 2023-03-22 14:13:55.078745+00:00)
+2023-03-22 14:13:55,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:57 UTC)" executed successfully
+2023-03-22 14:13:57,080 Looking for jobs to run
+2023-03-22 14:13:57,080 Next wakeup is due at 2023-03-22 14:13:59.078745+00:00 (in 1.998270 seconds)
+2023-03-22 14:13:57,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:59 UTC)" (scheduled at 2023-03-22 14:13:57.078745+00:00)
+2023-03-22 14:13:57,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:13:59 UTC)" executed successfully
+2023-03-22 14:13:59,079 Looking for jobs to run
+2023-03-22 14:13:59,080 Next wakeup is due at 2023-03-22 14:14:01.078745+00:00 (in 1.998835 seconds)
+2023-03-22 14:13:59,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:01 UTC)" (scheduled at 2023-03-22 14:13:59.078745+00:00)
+2023-03-22 14:13:59,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:01 UTC)" executed successfully
+2023-03-22 14:14:01,080 Looking for jobs to run
+2023-03-22 14:14:01,080 Next wakeup is due at 2023-03-22 14:14:03.078745+00:00 (in 1.998226 seconds)
+2023-03-22 14:14:01,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:03 UTC)" (scheduled at 2023-03-22 14:14:01.078745+00:00)
+2023-03-22 14:14:01,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:03 UTC)" executed successfully
+2023-03-22 14:14:03,080 Looking for jobs to run
+2023-03-22 14:14:03,080 Next wakeup is due at 2023-03-22 14:14:05.078745+00:00 (in 1.998236 seconds)
+2023-03-22 14:14:03,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:05 UTC)" (scheduled at 2023-03-22 14:14:03.078745+00:00)
+2023-03-22 14:14:03,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:05 UTC)" executed successfully
+2023-03-22 14:14:05,079 Looking for jobs to run
+2023-03-22 14:14:05,080 Next wakeup is due at 2023-03-22 14:14:07.078745+00:00 (in 1.998433 seconds)
+2023-03-22 14:14:05,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:07 UTC)" (scheduled at 2023-03-22 14:14:05.078745+00:00)
+2023-03-22 14:14:05,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:07 UTC)" executed successfully
+2023-03-22 14:14:07,080 Looking for jobs to run
+2023-03-22 14:14:07,081 Next wakeup is due at 2023-03-22 14:14:09.078745+00:00 (in 1.997935 seconds)
+2023-03-22 14:14:07,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:09 UTC)" (scheduled at 2023-03-22 14:14:07.078745+00:00)
+2023-03-22 14:14:07,083 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:09 UTC)" executed successfully
+2023-03-22 14:14:09,080 Looking for jobs to run
+2023-03-22 14:14:09,080 Next wakeup is due at 2023-03-22 14:14:11.078745+00:00 (in 1.998293 seconds)
+2023-03-22 14:14:09,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:11 UTC)" (scheduled at 2023-03-22 14:14:09.078745+00:00)
+2023-03-22 14:14:09,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:11 UTC)" executed successfully
+2023-03-22 14:14:11,079 Looking for jobs to run
+2023-03-22 14:14:11,080 Next wakeup is due at 2023-03-22 14:14:13.078745+00:00 (in 1.998894 seconds)
+2023-03-22 14:14:11,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:13 UTC)" (scheduled at 2023-03-22 14:14:11.078745+00:00)
+2023-03-22 14:14:11,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:13 UTC)" executed successfully
+2023-03-22 14:14:13,080 Looking for jobs to run
+2023-03-22 14:14:13,081 Next wakeup is due at 2023-03-22 14:14:15.078745+00:00 (in 1.998106 seconds)
+2023-03-22 14:14:13,081 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:15 UTC)" (scheduled at 2023-03-22 14:14:13.078745+00:00)
+2023-03-22 14:14:13,082 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:15 UTC)" executed successfully
+2023-03-22 14:14:15,080 Looking for jobs to run
+2023-03-22 14:14:15,080 Next wakeup is due at 2023-03-22 14:14:17.078745+00:00 (in 1.998314 seconds)
+2023-03-22 14:14:15,080 Running job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:17 UTC)" (scheduled at 2023-03-22 14:14:15.078745+00:00)
+2023-03-22 14:14:15,081 Job "process_logs (trigger: interval[0:00:02], next run at: 2023-03-22 14:14:17 UTC)" executed successfully
