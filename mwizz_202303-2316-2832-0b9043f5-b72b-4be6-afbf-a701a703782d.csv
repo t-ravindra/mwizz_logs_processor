@@ -1,0 +1,14 @@
+Product,Issue,Severity,Name,Workaround,Matched String,Signature,Log File
+ElasticSearch,Elastic-1234,Critical,HeapDumpOnOutOfMemoryError,Not Applicable,HeapDumpOnOutOfMemoryError,HeapDumpOnOutOfMemoryError,/logs_extracted/641c7d876719eb17139deffc/var/log/elasticsearch/elasticsearch.log
+ElasticSearch,Elastic-1234,Critical,HeapDumpOnOutOfMemoryError,Not Applicable,HeapDumpOnOutOfMemoryError,HeapDumpOnOutOfMemoryError,/logs_extracted/641c7d876719eb17139deffc/var/log/elasticsearch/elasticsearch_server.json
+ElasticSearch,Elastic-1234,Critical,HeapDumpOnOutOfMemoryError,Not Applicable,HeapDumpOnOutOfMemoryError,HeapDumpOnOutOfMemoryError,/logs_extracted/641c7d876719eb17139deffc/var/log/logstash/logstash-plain.log
+ElasticSearch,Elastic-1234,Critical,HeapDumpOnOutOfMemoryError,Not Applicable,HeapDumpOnOutOfMemoryError,HeapDumpOnOutOfMemoryError,/logs_extracted/641c7d876719eb17139deffc/var/log/logstash/logstash.stdout
+ElasticSearch,Health-4567,Information,Good Health,Not Applicable,"current.health=""GREEN""","current\.health\=\""GREEN\""",/logs_extracted/641c7d876719eb17139deffc/var/log/elasticsearch/elasticsearch.log
+ElasticSearch,Health-4567,Information,Good Health,Not Applicable,"current.health=""GREEN""","current\.health\=\""GREEN\""",/logs_extracted/641c7d876719eb17139deffc/var/log/elasticsearch/elasticsearch.log
+ElasticSearch,Health-4567,Information,Good Health,Not Applicable,"current.health=""GREEN""","current\.health\=\""GREEN\""",/logs_extracted/641c7d876719eb17139deffc/var/log/elasticsearch/elasticsearch.log
+ElasticSearch,Health-4567,Information,Good Health,Not Applicable,"current.health=""GREEN""","current\.health\=\""GREEN\""",/logs_extracted/641c7d876719eb17139deffc/var/log/elasticsearch/elasticsearch.log
+ElasticSearch,Health-4567,Information,Good Health,Not Applicable,"current.health=""GREEN""","current\.health\=\""GREEN\""",/logs_extracted/641c7d876719eb17139deffc/var/log/elasticsearch/elasticsearch.log
+ElasticSearch,Health-4567,Information,Good Health,Not Applicable,"current.health=""GREEN""","current\.health\=\""GREEN\""",/logs_extracted/641c7d876719eb17139deffc/var/log/elasticsearch/elasticsearch.log
+MongoDB,Mongo-4567,Warning,Mongo Access Control Disabled,Enable Access control for the database.,Access control is not enabled for the database.,Access control is not enabled for the database.,/logs_extracted/641c7d876719eb17139deffc/var/log/mongodb/mongodb.log
+Logstash,Logstash-4567,Warning,Logstash Connection Warning,Not applicable.,Restored connection to ES instance,Restored connection to ES instance,/logs_extracted/641c7d876719eb17139deffc/var/log/logstash/logstash-plain.log
+Logstash,Logstash-4567,Warning,Logstash Connection Warning,Not applicable.,Restored connection to ES instance,Restored connection to ES instance,/logs_extracted/641c7d876719eb17139deffc/var/log/logstash/logstash.stdout
