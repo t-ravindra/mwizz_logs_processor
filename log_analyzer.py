@@ -57,7 +57,7 @@ class Analyzer:
         #  with open("mwizz_logstash"+datetime.now().strftime('%Y%m-%d%H-%M%S-') + str(uuid4()) + ".cnf", mode="w", encoding="utf-8") as message:
         #     message.write(content)
         log.info("Saving to elasticsearch.")
-        es = Elasticsearch( {'host': 'localhost', 'port': 9200, 'use_ssl': False},)
+        es = Elasticsearch( {'host': '10.171.247.124', 'port': 9200, 'use_ssl': False},)
         with open(csv_path) as f:
             reader = csv.DictReader(f)
             helpers.bulk(es, reader, index='mwizz')
