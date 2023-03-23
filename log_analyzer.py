@@ -20,7 +20,7 @@ logging.basicConfig(filename="loganalyzer.log",
 log = logging.getLogger()
 log.setLevel(logging.DEBUG)
 
-MWIZZ_RESULTS_CSV_HEADERS = ["Product", "Issue", "Name", "Workaround", "Matched String", "Signature", "Matched Log", "Severity"]
+MWIZZ_RESULTS_CSV_HEADERS = ["Product", "Issue", "Severity", "Name", "Workaround", "Matched String", "Signature", "Log File"]
 
 
 class Analyzer:
@@ -107,7 +107,8 @@ class Analyzer:
                     i = 0
                     for match in matches:
                         log.info("Regex: %s matched file: %s" %(regex, file))
-                        row = [sign["product"], sign["name"], sign["workaround"], match.group(), sign["signature"], file, sign["severity"]]
+                        # ["Product", "Issue", "Severity", "Name", "Workaround", "Matched String", "Signature", "Log File", "Severity"]
+                        row = [sign["product"], sign["issue"], sign["severity"], sign["name"], sign["workaround"], match.group(), sign["signature"], file]
                         rows.append(row)
                         i = i+1
                 except Exception as e:

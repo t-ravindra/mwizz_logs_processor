@@ -39,7 +39,7 @@ def process_logs():
 
 
 sched = BlockingScheduler()
-sched.add_job(process_logs, 'interval', seconds=2)
+sched.add_job(process_logs, 'interval', seconds=30)
 sched.start()
 
 
